@@ -2,6 +2,11 @@ import React, { useState, useEffect } from "react";
 import { A, navigate } from "hookrouter";
 import { USER_SUGGESTIONS_URL } from "../../constants";
 import axios from "axios";
+import "../../Styles/style.css"
+import logo from  "../../images/logo.png"
+import logo2 from  "../../images/logo2.png"
+import logo3 from  "../../images/logo4.gif"
+import lo from "../../images/lo2.jpeg"
 
 export default function Navbar({ links, logout }) {
   const [shown, setShown] = useState(false);
@@ -125,16 +130,16 @@ export default function Navbar({ links, logout }) {
   }, [searchKey]);
 
   return (
-    <nav className=" flex items-center justify-around flex-wrap bg-white border-b-1 shadow border-black">
+    <nav className=" flex items-center justify-around flex-wrap bg-white border-b-1 shadow border-black ">
       <div>
-        <div className="flex items-center flex-shrink-0 text-white sm:mr-6 py-6 sm:pl-6">
+        <div className="flex items-center flex-shrink-0 text-white xs:mr-6 py-6 xs:pl-6">
           <A href="/home">
             <img
-              className="object-scale-down sm:w-48 w-32"
+              className="object-scale-down xs:w-20 w-32"
               src={
-                "https://user-images.githubusercontent.com/34866653/114220820-1a41f980-998a-11eb-91f5-9b14abde98d7.png"
+                 lo
               }
-              alt="SocioMark"
+              alt="SafePal"
             />
           </A>
         </div>

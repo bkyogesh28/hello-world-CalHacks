@@ -46,6 +46,7 @@ export default function Login({ onToggle }) {
         <Loading />
       ) : (
         <div className="flex items-center justify-center py-5 px-4 sm:px-6 lg:px-8">
+          
           <div className="max-w-md w-full">
             <form
               onSubmit={handleSubmit}

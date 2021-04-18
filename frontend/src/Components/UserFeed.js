@@ -92,7 +92,7 @@ export default function UserFeed() {
           </div>
           <div className="sm:w-1/3 sm:max-w-sm mt-4 sm:mt-1 w-full pb-4 h-full sticky top-4  rounded-lg bg-white overflow-hidden shadow">
             <div className="p-4">
-              <h2 className="text-lg font-medium text-gray-900">Suggestions</h2>
+              <h2 className="text-lg font-medium text-green-900">Suggestions</h2>
             </div>
             {suggestedUsers.map((user) => {
               return <Suggestions key={user.user_id} user={user} />;
